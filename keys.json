@@ -1,57 +1,68 @@
 {
-  "AURA-DAILY-2024-TEST": {
+  "AURA-DAILY-12345": {
     "type": "DAILY",
-    "expires": 1719504000,
-    "maxUsers": 1,
-    "hwids": [],
+    "expires": 1719676800,
+    "purchasedAt": 1719590400,
     "status": "active",
-    "features": ["basic"],
-    "createdAt": "2024-06-17",
+    "maxUsers": 1,
     "price": 5,
-    "description": "Daily access to Aura RedM features"
+    "features": ["basic"],
+    "createdAt": "2024-06-28",
+    "description": "24 hours from purchase time - Expires: 2024-06-29 12:00 UTC"
   },
-  "AURA-WEEK-2024-TEST": {
+  "AURA-WEEK-67890": {
     "type": "WEEKLY",
-    "expires": 1720108800,
+    "expires": 1720800000,
+    "purchasedAt": 1720195200,
+    "status": "active", 
     "maxUsers": 1,
-    "hwids": [],
-    "status": "active",
-    "features": ["basic", "advanced"],
-    "createdAt": "2024-06-17",
     "price": 25,
-    "description": "Weekly access with advanced features"
+    "features": ["basic", "advanced"],
+    "createdAt": "2024-07-05",
+    "description": "7 days from purchase time - Expires: 2024-07-12 12:00 UTC"
   },
-  "AURA-MONTH-2024-TEST": {
+  "AURA-MONTH-54321": {
     "type": "MONTHLY",
-    "expires": 1722700800,
-    "maxUsers": 1,
-    "hwids": [],
+    "expires": 1725379200,
+    "purchasedAt": 1722787200,
     "status": "active",
-    "features": ["basic", "advanced", "premium"],
-    "createdAt": "2024-06-17",
+    "maxUsers": 1,
     "price": 80,
-    "description": "Monthly access with premium features"
+    "features": ["basic", "advanced", "premium"],
+    "createdAt": "2024-08-04", 
+    "description": "30 days from purchase time - Expires: 2024-09-03 12:00 UTC"
   },
-  "AURA-LIFE-2024-TEST": {
+  "AURA-LIFE-99999": {
     "type": "LIFETIME",
     "expires": -1,
+    "purchasedAt": 1719590400,
+    "status": "active",
     "maxUsers": 1,
-    "hwids": [],
-    "status": "active",
-    "features": ["basic", "advanced", "premium", "vip"],
-    "createdAt": "2024-06-17",
     "price": 200,
-    "description": "Lifetime access with all VIP features"
+    "features": ["basic", "advanced", "premium", "vip"],
+    "createdAt": "2024-06-28",
+    "description": "Unlimited time - Never expires"
   },
-  "AURA-VIP-DEMO-2024": {
-    "type": "LIFETIME",
-    "expires": -1,
-    "maxUsers": 5,
-    "hwids": [],
+  "AURA-TEST-24H": {
+    "type": "DAILY",
+    "expires": 1719676800,
+    "purchasedAt": 1719590400,
     "status": "active",
-    "features": ["basic", "advanced", "premium", "vip", "exclusive"],
-    "createdAt": "2024-06-17",
-    "price": 500,
-    "description": "VIP Demo key with exclusive content"
+    "maxUsers": 1,
+    "price": 0,
+    "features": ["basic"],
+    "createdAt": "2024-06-28",
+    "description": "Test key - 24 hours from activation"
+  },
+  "AURA-EXPIRED-OLD": {
+    "type": "WEEKLY",
+    "expires": 1719504000,
+    "purchasedAt": 1718899200,
+    "status": "active",
+    "maxUsers": 1,
+    "price": 25,
+    "features": ["basic", "advanced"],
+    "createdAt": "2024-06-20",
+    "description": "Expired test key for demonstration"
   }
 }

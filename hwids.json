@@ -1,12 +1,27 @@
 {
-  "TEST-DAILY-2024-REDM": [
-    {
-      "hwid": "player123_server1",
-      "firstUsed": "2024-06-17T10:30:00Z",
-      "lastUsed": "2024-06-17T15:45:00Z"
-    }
-  ],
-  "TEST-WEEK-2024-REDM": [],
-  "TEST-MONTH-2024-REDM": [],
-  "TEST-LIFE-2024-REDM": []
+  "AURA-DAILY-2024-TEST": {
+    "registeredUsers": [],
+    "maxUsers": 1,
+    "currentUsers": 0
+  },
+  "AURA-WEEK-2024-TEST": {
+    "registeredUsers": [],
+    "maxUsers": 1,
+    "currentUsers": 0
+  },
+  "AURA-MONTH-2024-TEST": {
+    "registeredUsers": [],
+    "maxUsers": 1,
+    "currentUsers": 0
+  },
+  "AURA-LIFE-2024-TEST": {
+    "registeredUsers": [],
+    "maxUsers": 1,
+    "currentUsers": 0
+  },
+  "AURA-VIP-DEMO-2024": {
+    "registeredUsers": [],
+    "maxUsers": 5,
+    "currentUsers": 0
+  }
 }

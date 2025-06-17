@@ -1,28 +1,249 @@
 {
-  "systemVersion": "1.0.0",
-  "updateURL": "https://raw.githubusercontent.com/yourusername/redm-keys/main/",
-  "maintenanceMode": false,
-  "allowedVersions": ["1.0.0", "1.0.1"],
+  "systemInfo": {
+    "name": "Aura RedM Key System",
+    "version": "1.0.0",
+    "author": "wf-675",
+    "description": "Premium RedM menu with advanced authentication",
+    "lastUpdated": "2024-06-17",
+    "supportContact": "Discord: YourDiscord#1234"
+  },
+  
+  "systemSettings": {
+    "maintenanceMode": false,
+    "maintenanceMessage": "System is under maintenance. Please try again later.",
+    "allowedVersions": ["1.0.0", "1.0.1", "1.1.0"],
+    "minimumVersion": "1.0.0",
+    "updateURL": "https://raw.githubusercontent.com/wf-675/Aura-Keys/refs/heads/main/",
+    "forceUpdate": false,
+    "offlineMode": true,
+    "maxOfflineTime": 3600
+  },
+  
   "keyTypes": {
     "DAILY": {
+      "name": "Daily Pass",
       "duration": 86400,
       "price": 5,
-      "features": ["basic"]
+      "currency": "USD",
+      "features": ["basic"],
+      "maxUsers": 1,
+      "description": "24 hours access to basic features",
+      "color": "#ff9500",
+      "popular": false
     },
     "WEEKLY": {
-      "duration": 604800, 
+      "name": "Weekly Pass", 
+      "duration": 604800,
       "price": 25,
-      "features": ["basic", "advanced"]
+      "currency": "USD",
+      "features": ["basic", "advanced"],
+      "maxUsers": 1,
+      "description": "7 days access with advanced features",
+      "color": "#007aff",
+      "popular": true
     },
     "MONTHLY": {
+      "name": "Monthly Premium",
       "duration": 2592000,
       "price": 80,
-      "features": ["basic", "advanced", "premium"]
+      "currency": "USD", 
+      "features": ["basic", "advanced", "premium"],
+      "maxUsers": 1,
+      "description": "30 days access with premium features",
+      "color": "#ff3b30",
+      "popular": false
     },
     "LIFETIME": {
+      "name": "Lifetime VIP",
       "duration": -1,
       "price": 200,
-      "features": ["basic", "advanced", "premium", "vip"]
+      "currency": "USD",
+      "features": ["basic", "advanced", "premium", "vip"],
+      "maxUsers": 1,
+      "description": "Unlimited access with all VIP features",
+      "color": "#ffd700",
+      "popular": true
     }
+  },
+  
+  "features": {
+    "basic": {
+      "name": "Basic Features",
+      "description": "Essential RedM menu functions",
+      "items": [
+        "Horse Manager",
+        "Basic Weapons",
+        "Player Stats",
+        "Simple Teleports"
+      ]
+    },
+    "advanced": {
+      "name": "Advanced Features", 
+      "description": "Enhanced gameplay options",
+      "items": [
+        "Money Manager",
+        "Advanced Weapons",
+        "Custom Teleports",
+        "Weather Control",
+        "Time Control"
+      ]
+    },
+    "premium": {
+      "name": "Premium Features",
+      "description": "High-end customization tools", 
+      "items": [
+        "Character Editor",
+        "Outfit Manager",
+        "Property System",
+        "Vehicle Spawner",
+        "Admin Tools"
+      ]
+    },
+    "vip": {
+      "name": "VIP Features",
+      "description": "Exclusive premium content",
+      "items": [
+        "Exclusive Content",
+        "Priority Support",
+        "Beta Features",
+        "Custom Scripts",
+        "Private Discord"
+      ]
+    }
+  },
+  
+  "security": {
+    "hwidRequired": true,
+    "maxDevicesPerKey": 1,
+    "keyFormat": "AURA-TYPE-YYYY-XXXX",
+    "encryptionEnabled": false,
+    "rateLimitRequests": true,
+    "maxRequestsPerMinute": 10,
+    "blacklistedHWIDs": [],
+    "suspiciousActivityDetection": true
+  },
+  
+  "notifications": {
+    "welcomeMessage": "🌟 Welcome to Aura RedM! Your premium experience starts now.",
+    "keyExpiredMessage": "⚠️ Your Aura key has expired. Please renew for continued access.",
+    "maintenanceMessage": "🔧 Aura system is under maintenance. Please check back soon.",
+    "updateAvailableMessage": "📢 New Aura update available! Please update for the best experience.",
+    "showNotifications": true,
+    "notificationDuration": 5000
+  },
+  
+  "ui": {
+    "theme": {
+      "primaryColor": [137, 52, 235],
+      "secondaryColor": [255, 215, 0],
+      "backgroundColor": [30, 30, 30],
+      "textColor": [255, 255, 255],
+      "accentColor": [0, 255, 150]
+    },
+    "menuSettings": {
+      "defaultSize": [500, 450],
+      "defaultPosition": [450, 300],
+      "animationsEnabled": true,
+      "soundEffects": true,
+      "showKeyInfo": true,
+      "autoSave": true
+    },
+    "branding": {
+      "logoURL": "https://example.com/aura-logo.png",
+      "websiteURL": "https://your-website.com",
+      "discordURL": "https://discord.gg/yourdiscord",
+      "showBranding": true
+    }
+  },
+  
+  "api": {
+    "endpoints": {
+      "verifyKey": "/api/verify",
+      "registerHWID": "/api/register",
+      "checkStatus": "/api/status",
+      "reportUsage": "/api/usage"
+    },
+    "timeout": 30000,
+    "retryAttempts": 3,
+    "enableLogging": true
+  },
+  
+  "limits": {
+    "maxKeysPerUser": 5,
+    "maxHWIDsPerKey": 1,
+    "keyLength": 20,
+    "minKeyLength": 16,
+    "maxConcurrentUsers": 1000,
+    "sessionTimeout": 7200
+  },
+  
+  "monitoring": {
+    "trackUsage": true,
+    "logAuthentications": true,
+    "reportErrors": true,
+    "collectAnalytics": false,
+    "privacyMode": true
+  },
+  
+  "discounts": {
+    "enabled": true,
+    "codes": {
+      "WELCOME10": {
+        "discount": 10,
+        "type": "percentage",
+        "validFor": ["WEEKLY", "MONTHLY"],
+        "expires": "2024-12-31",
+        "maxUses": 100,
+        "description": "10% off for new users"
+      },
+      "BLACKFRIDAY": {
+        "discount": 25,
+        "type": "percentage", 
+        "validFor": ["MONTHLY", "LIFETIME"],
+        "expires": "2024-11-30",
+        "maxUses": 50,
+        "description": "Black Friday special - 25% off"
+      }
+    }
+  },
+  
+  "messages": {
+    "ar": {
+      "welcome": "🌟 أهلاً بك في Aura RedM! تجربتك المميزة تبدأ الآن",
+      "keyExpired": "⚠️ مفتاحك منتهي الصلاحية. يرجى التجديد للمتابعة",
+      "invalidKey": "❌ المفتاح غير صحيح",
+      "maintenance": "🔧 النظام تحت الصيانة حالياً"
+    },
+    "en": {
+      "welcome": "🌟 Welcome to Aura RedM! Your premium experience starts now",
+      "keyExpired": "⚠️ Your key has expired. Please renew for continued access",
+      "invalidKey": "❌ Invalid key provided", 
+      "maintenance": "🔧 System is currently under maintenance"
+    }
+  },
+  
+  "developerSettings": {
+    "debugMode": false,
+    "verboseLogging": false,
+    "testMode": false,
+    "allowTestKeys": true,
+    "bypassAuthentication": false,
+    "simulateOffline": false
+  },
+  
+  "backupSettings": {
+    "autoBackup": true,
+    "backupInterval": 86400,
+    "maxBackups": 7,
+    "backupLocation": "https://backup.example.com/aura/",
+    "encryptBackups": true
+  },
+  
+  "legal": {
+    "termsOfServiceURL": "https://your-website.com/terms",
+    "privacyPolicyURL": "https://your-website.com/privacy", 
+    "licenseType": "Commercial",
+    "copyright": "© 2024 Aura RedM. All rights reserved.",
+    "contactEmail": "support@your-website.com"
   }
 }

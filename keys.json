@@ -1,0 +1,34 @@
+{
+  "TEST-DAILY-2024-REDM": {
+    "type": "DAILY",
+    "expires": 1719504000,
+    "maxUsers": 1,
+    "hwids": [],
+    "createdAt": "2024-06-17",
+    "status": "active"
+  },
+  "TEST-WEEK-2024-REDM": {
+    "type": "WEEKLY", 
+    "expires": 1720108800,
+    "maxUsers": 1,
+    "hwids": [],
+    "createdAt": "2024-06-17",
+    "status": "active"
+  },
+  "TEST-MONTH-2024-REDM": {
+    "type": "MONTHLY",
+    "expires": 1722700800,
+    "maxUsers": 1,
+    "hwids": [],
+    "createdAt": "2024-06-17", 
+    "status": "active"
+  },
+  "TEST-LIFE-2024-REDM": {
+    "type": "LIFETIME",
+    "expires": -1,
+    "maxUsers": 1,
+    "hwids": [],
+    "createdAt": "2024-06-17",
+    "status": "active"
+  }
+}

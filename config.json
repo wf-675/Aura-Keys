@@ -1,0 +1,28 @@
+{
+  "systemVersion": "1.0.0",
+  "updateURL": "https://raw.githubusercontent.com/yourusername/redm-keys/main/",
+  "maintenanceMode": false,
+  "allowedVersions": ["1.0.0", "1.0.1"],
+  "keyTypes": {
+    "DAILY": {
+      "duration": 86400,
+      "price": 5,
+      "features": ["basic"]
+    },
+    "WEEKLY": {
+      "duration": 604800, 
+      "price": 25,
+      "features": ["basic", "advanced"]
+    },
+    "MONTHLY": {
+      "duration": 2592000,
+      "price": 80,
+      "features": ["basic", "advanced", "premium"]
+    },
+    "LIFETIME": {
+      "duration": -1,
+      "price": 200,
+      "features": ["basic", "advanced", "premium", "vip"]
+    }
+  }
+}

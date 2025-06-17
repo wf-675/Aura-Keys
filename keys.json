@@ -1,34 +1,57 @@
 {
-  "TEST-DAILY-2024-REDM": {
+  "AURA-DAILY-2024-TEST": {
     "type": "DAILY",
     "expires": 1719504000,
     "maxUsers": 1,
     "hwids": [],
+    "status": "active",
+    "features": ["basic"],
     "createdAt": "2024-06-17",
-    "status": "active"
+    "price": 5,
+    "description": "Daily access to Aura RedM features"
   },
-  "TEST-WEEK-2024-REDM": {
-    "type": "WEEKLY", 
+  "AURA-WEEK-2024-TEST": {
+    "type": "WEEKLY",
     "expires": 1720108800,
     "maxUsers": 1,
     "hwids": [],
+    "status": "active",
+    "features": ["basic", "advanced"],
     "createdAt": "2024-06-17",
-    "status": "active"
+    "price": 25,
+    "description": "Weekly access with advanced features"
   },
-  "TEST-MONTH-2024-REDM": {
+  "AURA-MONTH-2024-TEST": {
     "type": "MONTHLY",
     "expires": 1722700800,
     "maxUsers": 1,
     "hwids": [],
-    "createdAt": "2024-06-17", 
-    "status": "active"
+    "status": "active",
+    "features": ["basic", "advanced", "premium"],
+    "createdAt": "2024-06-17",
+    "price": 80,
+    "description": "Monthly access with premium features"
   },
-  "TEST-LIFE-2024-REDM": {
+  "AURA-LIFE-2024-TEST": {
     "type": "LIFETIME",
     "expires": -1,
     "maxUsers": 1,
     "hwids": [],
+    "status": "active",
+    "features": ["basic", "advanced", "premium", "vip"],
     "createdAt": "2024-06-17",
-    "status": "active"
+    "price": 200,
+    "description": "Lifetime access with all VIP features"
+  },
+  "AURA-VIP-DEMO-2024": {
+    "type": "LIFETIME",
+    "expires": -1,
+    "maxUsers": 5,
+    "hwids": [],
+    "status": "active",
+    "features": ["basic", "advanced", "premium", "vip", "exclusive"],
+    "createdAt": "2024-06-17",
+    "price": 500,
+    "description": "VIP Demo key with exclusive content"
   }
 }
